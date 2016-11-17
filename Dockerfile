@@ -16,7 +16,8 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y \
     python \
     python-pip \
-    python-django
+    python-django \
+    tree
 
 # Create application subdirectories
 WORKDIR $DOCKER_SRVHOME
@@ -34,5 +35,6 @@ EXPOSE 8000
 
 # Copy entrypoint script into the image
 WORKDIR $DOCKER_SRVPROJ
-COPY ./../docker-entrypoint.sh /
+RUN tree
+COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
