@@ -32,3 +32,7 @@ RUN pip install -r $DOCKER_SRVPROJ/requirements.txt
 
 EXPOSE 8000
 
+# Copy entrypoint script into the image
+WORKDIR $DOCKER_SRVPROJ
+COPY ./docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
