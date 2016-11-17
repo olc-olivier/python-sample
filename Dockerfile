@@ -34,5 +34,5 @@ EXPOSE 8000
 
 # Copy entrypoint script into the image
 WORKDIR $DOCKER_SRVPROJ
-COPY ./docker-entrypoint.sh /
+COPY ./../docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
