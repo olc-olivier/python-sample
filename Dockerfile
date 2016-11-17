@@ -1,4 +1,4 @@
-FROM python:3.5-alpine
+FROM python:3.5
 
 # Set the file maintainer (your name - the file's author)
 MAINTAINER Olivier Chantereau
