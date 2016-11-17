@@ -1,0 +1,6 @@
+ ansible gvfs-backends libsmbclient python python-all python-all-dev
+  python-crypto python-dev python-django python-ecdsa python-httplib2
+  python-jinja2 python-markupsafe python-netaddr python-paramiko
+  python-pip python-pkg-resources python-selinux python-setuptools
+  python-six python-sqlparse python-talloc python-tz python-wheel
+  python-yaml samba-libs virtualbox virtualbox-qt
