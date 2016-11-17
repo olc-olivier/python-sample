@@ -27,6 +27,7 @@ VOLUME ["$DOCKER_SRVHOME/media/", "$DOCKER_SRVHOME/logs/"]
 COPY $DOCKER_SRC $DOCKER_SRVPROJ
 
 # Install Python dependencies
+RUN pip install --upgrade pip
 RUN pip install -r $DOCKER_SRVPROJ/requirements.txt
 
 EXPOSE 8000
